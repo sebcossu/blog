@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default(value=config.title) }}</title>
+  <link rel="alternate" type="application/atom+xml" title="{{ config.title }} feed" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
+  <style>
+    body{max-width:65ch;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui,sans-serif}
+    a{text-decoration:none} a:hover{text-decoration:underline}
+    header,footer{opacity:.7;font-size:.9em}
+  </style>
+</head>
+<body>
+<header>
+  <a href="{{ config.base_url }}">Home</a> • <a href="{{ get_url(path='posts/') }}">Posts</a>
+</header>
+<main>
+{% block content %}{% endblock content %}
+</main>
+<footer><p>&copy; {{ now() | date(format="%Y") }} {{ config.title }}</p></footer>
+</body>
+</html>
