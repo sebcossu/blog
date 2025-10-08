@@ -1,11 +1,18 @@
 # The URL the site will be built for
 base_url = "https://sebcossu.github.io/blog/"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+# Core metadata
+title = "Night Cup"
+description = "Nightly notes on coding and computers..."
 
-# Whether to build a search index to be used later on by a JavaScript library
+# Features
+compile_sass = false
 build_search_index = true
+generate_feed = true
+generate_sitemap = true
+
+# Tags/Categories
+taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -14,8 +21,4 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-title = "Night Cup"
-description = "Nightly notes on coding and computers..."
-generate_feed = true
-taxonomies = [{ name = "tags" }, { name = "categories" }]
 
