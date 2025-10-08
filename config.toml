@@ -8,8 +8,9 @@ description = "Nightly notes on coding and computers..."
 # Features
 compile_sass = false
 build_search_index = true
-generate_feed = true
+generate_feeds = true
 generate_sitemap = true
+generate_robots_txt = true
 
 # Tags/Categories
 taxonomies = [{ name = "tags" }, { name = "categories" }]
