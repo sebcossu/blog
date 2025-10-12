@@ -1,9 +1,11 @@
 # The URL the site will be built for
-base_url = "https://blog.sebcossu.com"
+base_url = "https://blog.sebcossu.com/"
 
 # Core metadata
 title = "Night Cup"
 description = "Nightly notes on coding and computers..."
+
+theme = "zola.386"
 
 # Features
 compile_sass = false
@@ -14,7 +16,10 @@ generate_sitemap = true
 generate_robots_txt = true
 
 # Tags/Categories
-taxonomies = [{ name = "tags" }, { name = "categories" }]
+taxonomies = [
+    { name = "tags", rss=true },
+    { name = "categories", rss=true }
+]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -23,4 +28,23 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+author = "Seb Cossu"
+keywords = "blog, coding, tech, gamedev, unix, linux"
+year = 2025
+theme_color = "#111111"
+zola386_menu = [
+    { path = "/",               name = "Home" },
+    { path = "/categories/",      name = "Categories" },
+    { path = "/tags/",            name = "Tags" },
+    { path = "/about/",           name = "About" },
+]
 
+label_date = "Date"
+label_author = "Author"
+label_taxonomy = "Tags"
+label_reading = "Reading time"
+label_read_more = "Read more"
+label_tags = "Tags"
+label_tag = "Tag"
+label_categories = "Categories"
+label_category = "Category"
