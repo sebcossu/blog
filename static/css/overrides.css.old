@@ -1,0 +1,18 @@
+body, main, article, .content, .post, .container {
+  filter: none !important;
+}
+
+/* Make images look normal */
+img, .post img, article img, .content img {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  image-rendering: auto !important;   /* undo pixelated/crisp-edges if present */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: keep side UI retro but not the post body */
+.post-body, .entry, .content {
+  filter: none !important;
+}

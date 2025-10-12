@@ -9,4 +9,6 @@ categories = ["dev-notes"]
 
 ![Squirtle](squirtle.png)
 <br>
+<img src="squirtle.png" alt="Squirtle" class="natural-pic" height="200">
+<br>
 The best pokémon.

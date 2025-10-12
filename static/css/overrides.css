@@ -1,0 +1,8 @@
+.natural-pic {
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  image-rendering:auto !important;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
