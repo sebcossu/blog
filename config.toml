@@ -8,7 +8,7 @@ description = "Nightly notes on coding and computers..."
 theme = "zola.386"
 
 # Features
-compile_sass = false
+compile_sass = true 
 build_search_index = true
 feed_filenames = ["atom.xml", "rss.xml"]
 generate_feeds = true
