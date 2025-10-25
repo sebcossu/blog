@@ -3,7 +3,7 @@ base_url = "https://sebcossu.github.io/blog"
 
 # Core metadata
 title = "$ tatoru's shell"
-description = "/* Coding adventures' log */"
+description = "/* A dev's log */"
 
 theme = "zola.386"
 
