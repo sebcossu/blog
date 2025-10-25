@@ -2,8 +2,8 @@
 base_url = "https://sebcossu.github.io/blog"
 
 # Core metadata
-title = "Night Cup"
-description = "Nightly notes on coding and computers..."
+title = "$ tatoru's shell"
+description = "/* Coding adventures' log */"
 
 theme = "zola.386"
 
@@ -33,10 +33,10 @@ keywords = "blog, coding, tech, gamedev, unix, linux"
 year = 2025
 theme_color = "#111111"
 zola386_menu = [
-    { path = "/",               name = "Home" },
-    { path = "categories",      name = "Categories" },
-    { path = "tags",            name = "Tags" },
-    { path = "about",           name = "About" },
+    { path = "categories",      name = "categories/" },
+    { path = "tags",            name = "tags/" },
+    { path = "about",           name = "about/" },
+    { path = "books",           name = "books/" },
 ]
 
 label_date = "Date"

@@ -1,8 +1,74 @@
 .natural-pic {
-  filter:none !important;
-  mix-blend-mode:normal !important;
-  image-rendering:auto !important;
-  max-width:100%;
-  height:auto;
-  display:block;
+    filter:none !important;
+    mix-blend-mode:normal !important;
+    image-rendering:auto !important;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.small-pic {
+    width: 100px;
+}
+
+.medium-pic {
+    width: 200px;
+}
+
+.big-pic {
+    width: 500px;
+}
+
+.wide-table {
+    width: 100%
+    text-align: center;
+    vertical-align: center;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+.bordered {
+    border: 3px solid green;
+}
+
+.justified {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.secret-message {
+    color: darkblue;
+}
+
+.tiny-text {
+    font-size: 12px;
+}
+
+table {
+    border: 1px solid green;
+    border-spacing: 0; 
+    empty-cells: show;
+    width: 100%;
+    text-align: center;
+    hortizontal-align: center;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 1px solid green;
+}
+
+table {
+    position: relative;               /* the pseudo-element will be based on the table */
+    overflow: hidden;                 /* don't let the pseudo-element overflow */
+}
+
+tr:before {
+    content: '';                      /* required for rendering */
+    position: absolute;               /* absolute positioned */
+    width: 100%;                      /* span the entire table */
+    border-bottom: 1px solid black;   /* the magic border */
 }
